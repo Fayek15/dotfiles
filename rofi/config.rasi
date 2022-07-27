@@ -1,0 +1,37 @@
+configuration {
+ transparency: "real";
+ modi: "window,drun,ssh,combi,calc";
+ font: "Iosevka Nerd Font 15";
+ combi-modi: "window,drun,ssh";
+ display-drun: 					"  ";
+}
+
+@import "~/.cache/wal/colors-rofi-dark.rasi"
+
+window {
+    background-color: @background;
+    text-color: @foreground;
+    width: 40%;
+    height: 40%;
+    border: 6px;
+    border-color: @urgent-background;
+    border-radius: 24;
+}
+
+
+
+entry {
+	placeholder:			"Search";
+	expand:                         true;
+	cursor:				text;
+}
+
+prompt{
+    padding: 0% 0.5% 0.5% -0.5%;
+}
+
+element{
+    orientation: horizontal;
+    border-radius: 40px;
+    padding: 0.5% 0.5%;
+}
